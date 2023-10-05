@@ -1,0 +1,68 @@
+body {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+.header-clothes-container {
+  width: 100%;
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #97212d;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  .clothes-image {
+    div {
+      display: flex;
+      align-items: center;
+      img {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+      }
+      span {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #ffffff;
+      }
+    }
+  }
+  .clothes-search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    input {
+      width: 500px;
+      height: 40px;
+      outline: none;
+      border-style: none;
+      font-size: 1rem;
+      border-radius: 10px;
+      padding: 0px 40px;
+    }
+    .icons-btn {
+      position: absolute;
+      top: 20%;
+      right: 10%;
+      font-size: 1.5rem;
+      color: black;
+      cursor: pointer;
+    }
+    .cart-icons {
+      font-size: 2rem;
+      color: #ffffff;
+      padding-left: 20px;
+    }
+  }
+}
+.cart-image {
+  margin-top: 5%;
+  img {
+    width: 100%;
+    cursor: pointer;
+    object-fit: cover;
+    height: auto;
+  }
+}

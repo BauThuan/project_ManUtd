@@ -1,0 +1,136 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+}
+.login-container {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  background: url(https://e0.pxfuel.com/wallpapers/616/573/desktop-wallpaper-manchester-united-logo-ultra-background.jpg)
+    no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  .login-content {
+    width: 25%;
+    height: 60%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(200px);
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    .login-form {
+      width: 80%;
+      margin: auto auto;
+      .text-login {
+        margin-top: -100px;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 700;
+        color: #ffffff;
+      }
+      .login-label {
+        width: 100%;
+        margin-top: -20px;
+        .login-account {
+          margin-top: 30px;
+          position: relative;
+          border-bottom: 2px solid #ffffff;
+          padding: 15px;
+
+          .icons-login {
+            position: absolute;
+            right: 8px;
+            font-size: 1.3rem;
+            color: #ffffff;
+          }
+          input {
+            margin-left: -17px;
+            width: 100%;
+            height: 100%;
+            border: none;
+            background-color: transparent;
+            outline: none;
+            color: #ffffff;
+            font-size: 0.9rem;
+            font-weight: 300;
+          }
+          input:focus + .text-label-acc,
+          input:valid + .text-label-acc {
+            top: -5px;
+          }
+          .text-label-acc {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            font-size: 1rem;
+            font-weight: 600;
+            z-index: 0;
+            transition: 0.5s;
+            color: #ffffff;
+          }
+        }
+        .login-password {
+          margin-top: 30px;
+          position: relative;
+          border-bottom: 2px solid #ffffff;
+          padding: 15px;
+
+          .icons-pass {
+            position: absolute;
+            right: 8px;
+            font-size: 1.3rem;
+            color: #ffffff;
+          }
+          input {
+            margin-left: -17px;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            outline: none;
+            border: none;
+            color: #ffffff;
+            font-size: 0.9rem;
+            font-weight: 300;
+          }
+          input:focus + .text-label-pass,
+          input:valid + .text-label-pass {
+            top: -5px;
+          }
+          .text-label-pass {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            font-size: 1rem;
+            font-weight: 600;
+            transform: translateY(-50%);
+            transition: 0.5s;
+            color: #ffffff;
+          }
+        }
+        .login-enter {
+          margin-top: 50px;
+          button {
+            outline: none;
+            cursor: pointer;
+            font-size: 1.2rem;
+            width: 100%;
+            padding: 5px 0px;
+            border-radius: 10px;
+            border: none;
+            color: #ffffff;
+            background-color: black;
+          }
+        }
+        .option-login {
+          margin-top: 30px;
+          font-size: 0.8rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

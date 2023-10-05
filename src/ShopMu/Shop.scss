@@ -1,0 +1,112 @@
+body {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+.shop-container {
+  padding-top: 100px;
+  width: 100%;
+  .background-shop {
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      cursor: pointer;
+    }
+  }
+  .clothes-shop {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+
+    .list-clothes {
+      display: flex;
+      overflow: hidden;
+      .list-infor {
+        cursor: pointer;
+        padding: 0px 0.4rem;
+        width: 328px;
+        height: auto;
+        img {
+          transition: transform 0.6s ease-in-out;
+          &:hover {
+            transform: scale(1.06);
+          }
+        }
+        .price-list {
+          font-size: 0.9rem;
+          font-weight: 700;
+          color: red;
+        }
+        .text-list {
+          font-size: 0.8rem;
+          font-weight: 400;
+        }
+      }
+    }
+    .icons-left {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      cursor: pointer;
+      .clo-Left {
+        width: 40px;
+        height: 70px;
+        background-color: rgba(35, 34, 34, 0.3);
+        color: #ffffff;
+      }
+      &:hover {
+        transition: 0.5s;
+        background-color: rgba(35, 34, 34, 1);
+      }
+    }
+
+    .icons-right {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      cursor: pointer;
+      .clo-Right {
+        width: 40px;
+        height: 70px;
+        background-color: rgba(35, 34, 34, 0.3);
+        color: #ffffff;
+      }
+      &:hover {
+        transition: 0.5s;
+        background-color: rgba(35, 34, 34, 1);
+      }
+    }
+  }
+  .background-sale {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    overflow: hidden;
+    img {
+      width: 350px;
+      object-fit: cover;
+      cursor: pointer;
+      transition: transform 0.6s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  .logo-clo {
+    div {
+      width: 90%;
+      margin: 0 auto;
+      cursor: pointer;
+    }
+  }
+  .background-text {
+    div {
+      width: 90%;
+      margin: 0 auto;
+      font-size: 0.9rem;
+      line-height: 1.5rem;
+    }
+  }
+}

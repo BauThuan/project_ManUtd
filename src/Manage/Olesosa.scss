@@ -1,0 +1,126 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+}
+.manage-container {
+  width: 100%;
+  height: 200px;
+  .manage-text {
+    padding-top: 10%;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    h1 {
+      font-size: 2.3rem;
+      width: 13.5% !important;
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 13.5%;
+        height: 5px;
+        position: absolute;
+        background-color: red;
+        bottom: 0;
+        left: 0;
+        border-radius: 20px;
+      }
+    }
+  }
+  .manage-information {
+    padding: 20px 0px 0px;
+    width: 100%;
+    height: auto;
+    font-size: 2rem;
+    background-color: #3f3f3f;
+    .manage-content {
+      display: flex;
+      margin: 0 auto;
+      width: 70%;
+      justify-content: space-between;
+      .manage-image {
+        display: flex;
+        flex-direction: column;
+        img {
+          width: 300px;
+          height: auto;
+          object-fit: cover;
+        }
+        p {
+          font-size: 1.5rem;
+          font-weight: 500;
+          color: #ffffff;
+        }
+        p {
+          font-size: 1.5rem;
+          font-weight: 500;
+          color: #ffffff;
+        }
+        p {
+          font-size: 1.5rem;
+          font-weight: 300;
+          color: #ffffff;
+        }
+      }
+      .manage-image:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  }
+  .manage-biography {
+    width: 100%;
+    height: 400px;
+    .biography-text {
+      width: 70%;
+      margin: 0 auto;
+      height: 100px;
+      .biography-type {
+        margin-top: 2%;
+        position: relative;
+        .text-up {
+          font-size: 1.5rem;
+          color: #717070;
+          font-weight: 500;
+        }
+        .text-down {
+          font-size: 1.2rem;
+          font-weight: 400;
+          line-height: 2rem;
+          &::after {
+            content: "";
+            display: inline-block;
+            width: 100%;
+            height: 1px;
+            position: absolute;
+            background-color: #717070;
+            bottom: -20%;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+  .information-text {
+    width: 100%;
+    .information-content {
+      width: 70%;
+      margin: 0 auto;
+      font-size: 1rem;
+      .information-position {
+        margin-top: -16%;
+        display: flex;
+        justify-content: space-between;
+        .h2-manage {
+          font-size: 1.5rem;
+          color: #717070;
+          font-weight: 500;
+        }
+        .p-manage {
+          font-size: 1.2rem;
+          color: red;
+        }
+      }
+    }
+  }
+}
